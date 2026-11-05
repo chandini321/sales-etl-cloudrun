@@ -1,0 +1,35 @@
+
+{
+  "type": "object",
+  "properties": {
+    "transaction_id": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "unit_price": {
+      "type": "number",
+      "minimum": 0
+    },
+    "state": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "transaction_id",
+    "customer_id",
+    "product",
+    "quantity",
+    "unit_price",
+    "state"
+  ],
+  "additionalProperties": false
+}
